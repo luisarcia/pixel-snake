@@ -1,0 +1,39 @@
+body { background-color: rgba(0,0,0,0.2) }
+.canvas-wrap { position: relative; margin: 0 auto; margin-top: 40px; width: 800px; height: 690px; background-color: #4A148C; display: block; border-radius: 6px }
+canvas { box-shadow: 0 0 10px rgba(0,0,0,0.5); background: rgba(105,27,154,1); background: -moz-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(105,27,154,1)), color-stop(100%, rgba(74,20,140,1))); background: -webkit-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -o-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -ms-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: linear-gradient(135deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#691b9a', endColorstr='#4a148c', GradientType=1 ); display: block); border-radius: 6px }
+.score { height: 90px; padding: 15px;font-size: 2.5rem; font-family: 'Press Start 2P'; color: white; }
+.score span { vertical-align: middle; line-height: 0 }
+.score span:nth-child(2) img { margin-top: -18px; margin-left: 5px; width: 40px;}
+.displays { position: absolute; padding: 15px; padding-top: 90px; width: 800px; height: 690px; top: 0; left: 0; z-index: 10; background: rgba(105,27,154,1); background: -moz-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(105,27,154,1)), color-stop(100%, rgba(74,20,140,1))); background: -webkit-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -o-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: -ms-linear-gradient(-45deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); background: linear-gradient(135deg, rgba(105,27,154,1) 0%, rgba(74,20,140,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#691b9a', endColorstr='#4a148c', GradientType=1 )}
+#start h1 { margin: 0; padding-top: 20px; font-family: 'Press Start 2P'; color: #FF6F00; text-align: center; font-size: 4rem; line-height: 3rem }
+#start h4 { margin: 0; padding-top: 20px; font-family: 'Press Start 2P'; color: #FF6F00; text-align: center; }
+#start-btn { margin: 0 auto; margin-top: 50px; width: 200px; height: 60px; font-size: 2rem; font-family: 'Press Start 2P', cursive;  background-color: transparent; color: white; border: 4px dashed white; border-radius: 90px; cursor: pointer; display: block}
+#start-btn:hover { transform: scale(1.05); opacity: 0!important; }
+.controls-img { margin: 0 auto; padding-top: 70px; width: 150px; display: block}
+
+#gameover {text-align: center; font-family: 'Press Start 2P'; }
+#gameover h1 { padding-top: 25%; color: white; }
+.score-gameover { color: white; font-size: 2rem;}
+.score-gameover span { vertical-align: middle; }
+.score-gameover span:nth-child(2) img { width: 50px; margin-top: -15px; }
+
+.btn-blink { border: none; background: white; color: #4A148C; cursor: pointer }
+.ani-blink { animation: blink 0.6s infinite linear }
+.ani-zoom { animation: zoom 0.6s linear }
+
+button:focus { box-shadow: none!important; outline: none!important }
+button:focus { box-shadow: none!important; outline: none!important }
+button:focus, button:active, .form-control:focus { box-shadow: none!important; }
+.form-control:focus { box-shadow: none!important; }
+
+@keyframes blink {
+	25% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	75% { opacity: 1.0;}
+	100% { opacity: 0.0; }
+}
+
+@keyframes zoom {
+	from { transform: scale(1.5) }
+	to { transform: scale(1.0) }
+}
